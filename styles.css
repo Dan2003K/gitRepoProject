@@ -1,0 +1,231 @@
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+    background: #121212;
+    font-family: sans-serif;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    align-items: center;
+  }
+
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #999;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+    border: 1px solid #333;
+  }
+
+  .card>a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  /* Optional: a bit of lift on hover */
+  .card:hover {
+    transform: scale(1.05);
+
+  }
+
+  .card-list>.card:hover {
+    filter: invert(1);
+  }
+
+  gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  gallery>.card {
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    margin: 1rem;
+  }
+
+  gallery>.card:hover {
+    text-align: center;
+    transform: scale(1.02);
+  }
+
+
+
+  .list-container {
+    box-sizing: border-box;
+    margin: 40px;
+    width: auto;
+    height: 450px;
+    border-radius: 12px;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+
+    /* Add this: */
+    perspective: 1000px;
+    perspective-origin: center;
+    overflow: hidden;
+  }
+
+
+
+  /* The entire list is tilted back */
+  .card-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 2rem;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><circle cx='1' cy='1' r='1' fill='rgba(128,128,128,0.1)'/></svg>");
+  }
+
+  nav {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    color: #444444;
+    background-color: #44444480;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    border: 1px solid #444444;
+    border-radius: 70px;
+    font-size: 1rem;
+    backdrop-filter: blur(75px);
+    z-index: 100;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border-radius: inherit;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+    background-color: #ffffff00;
+    border-radius: inherit;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: inline;
+    margin: 10px;
+  }
+
+  nav ul li:hover {
+    background-color: #000000;
+    filter: invert(1);
+    backdrop-filter: blur(75px);
+  }
+
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    margin: 0px 20px;
+  }
+
+  button,
+  #top {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 100;
+    color: #444444;
+    background-color: #44444480;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: 1px solid #444444;
+    border-radius: 70px;
+    font-size: 1rem;
+    backdrop-filter: blur(75px);
+    z-index: 100;
+    outline: none;
+  }
+
+  button:hover,
+  #top:hover {
+    filter: invert(1);
+    transition: all 0.3s linear;
+  }
+
+  button,
+  #top a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  footer {
+    padding: 100px 40px;
+    bottom: 0px;
+    color: #888;
+    background-color: #0c0c0c;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 20px;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+
+  #invert>img {
+    filter: invert(1);
+  }
