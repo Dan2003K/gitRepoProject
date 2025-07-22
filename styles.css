@@ -239,7 +239,7 @@
    .list-container {
      box-sizing: border-box;
      width: 100%;
-     height: 700px;
+     height: 600px;
      border-radius: 12px;
      background-color: #0e0e0e;
      display: flex;
@@ -257,7 +257,7 @@
    .card-list {
      display: grid;
      justify-content: center;
-     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
      height: 100%;
      width: 100%;
      overflow-y: scroll;
@@ -715,10 +715,10 @@
      }
 
      .skillset-section {
-       padding: 0 5rem;
+       padding: 0 4rem;
      }
 
      #me-section {
-       padding: 0 5rem;
+       padding: 0 4rem;
      }
    }
