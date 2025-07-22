@@ -100,6 +100,12 @@
      text-decoration: none;
    }
 
+   section#hero>article>section p {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
    .scroll-offset {
      scroll-margin: 20vh;
    }
